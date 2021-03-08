@@ -1,0 +1,16 @@
+{{template "base" .}}
+
+{{define "main"}}
+<h1>Login</h1>
+<form method="POST" action="/login">
+  {{if .Continue}}
+    <input type="hidden" name="continue" value="{{.Continue}}">
+  {{end}}
+  Username:<br />
+  <input name='username' placeholder='Username'><br />
+  Password:<br />
+  <input type='password' placeholder='Password' name='password'><br />
+  <br />
+  <input type='submit' value='Login'>
+</form>
+{{end}}

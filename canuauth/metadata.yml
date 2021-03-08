@@ -1,0 +1,30 @@
+# This is the standard metadata for a challenge with a web component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: canuauth
+scoreboard_name: Can You Auth?
+author: matir
+flag: 'CTF{thx_for_coming_to_my_mtls_tut}'
+description:
+  We looked at Google's [BeyondCorp](https://cloud.google.com/beyondcorp)
+  and decided to build a similar solution.  Can you authenticate to our proof
+  of concept server?
+value: 1000
+tags:
+  - Web
+  - "101"
+port: 443
+protocol: https # accepted: http, https, tcp, udp
+# Need to speak TLS directly, can't use LB
+use_http_loadbalancer: false
+notes: Private notes on deployment, setup, etc.
+replicas: 5
+environ:
+  FLAG: 'CTF{thx_for_coming_to_my_mtls_tut}'

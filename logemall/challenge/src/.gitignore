@@ -1,0 +1,5 @@
+core.bin
+harness
+*.o
+test
+core.elf

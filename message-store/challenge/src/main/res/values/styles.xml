@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Flagstore" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorOnSurface">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="Theme.MyApp.NoBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+
+</resources>

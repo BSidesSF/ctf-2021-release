@@ -1,0 +1,36 @@
+# This is the standard metadata for a challenge with a web component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: cutesrv
+scoreboard_name: CuteSrv
+author: matir
+flag: "CTF{i_hope_you_made_it_through_2020_okay}"
+description:
+  Last year was pretty tough for all of us.  I built this service of cute photos
+  to help cheer you up.  We do moderate for cuteness, so no inappropriate photos
+  please!
+value: 1000
+tags:
+  - Web
+port: 5124
+protocol: http # accepted: http, https, tcp, udp
+environ:
+  LOGIN_SERVICE:
+    https://loginsvc-0af88b56.challenges.bsidessf.net/
+  BASE_URL:
+    https://cutesrv-0186d981.challenges.bsidessf.net/
+  FLAG:
+    "CTF{i_hope_you_made_it_through_2020_okay}"
+notes: Private notes on deployment, setup, etc.
+replicas: 3
+webbot:
+  port: 3000
+  cookies:
+    - loginsvc=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJsb2dpbnN2YyIsImV4cCI6MTYxNzM0MzAyMSwiaWF0IjoxNjE0NjY0NjIxLCJpc3MiOiJsb2dpbnN2YyIsIm5iZiI6MTYxNDY2NDYyMSwic3ViIjoiYWRtaW4ifQ.tU7OtIN-xLBrc0zzo8ysDE6rkoyD6NO2VB1xVm_LeKYYMsKaVgRGixH3TDvJZOv951J28ULYY9W9CVvjo51E8g;url=https://loginsvc-0af88b56.challenges.bsidessf.net/

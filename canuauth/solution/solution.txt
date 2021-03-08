@@ -1,0 +1,10 @@
+openssl genrsa -out ca.key 2048
+openssl req -new -key ca.key -sha256 -days 30 -x509 -out ca.crt -subj '/OU=Auth CA/O=BSidesSF CTF/L=San Francisco/ST=California/C=US'
+openssl genrsa -out client.key 2048
+mkdir db
+echo '1005'>db/serial
+openssl req -new -key client.key -out client.csr
+touch ./db/ca.db
+openssl ca -config ca.ini -in client.csr -out client.crt
+cat client.key client.crt ca.crt > client_chain.pem
+curl -v -k --cert ./client_chain.pem https://localhost:1301/

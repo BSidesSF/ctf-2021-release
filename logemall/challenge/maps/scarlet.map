@@ -1,0 +1,26 @@
+; Line 1: default map name
+Scarlet Island
+
+; Line 2: one-line description
+There's something weird about the eastern shore...
+
+; Line 3-6: up / left / down / right map names
+route21.map
+none
+none
+route20.map
+
+; Next 20 lines: map data
+WWWWWW#    #WWWWWWWW
+WWWWWW#    #WWWWWWWW
+WWWWWW#    #WWWWWWWW
+WWWttt      ttttWWWW
+WWWtMMMM M  tttt####
+WWWtM vM M          
+WWWtM MM M     ?####
+WWW M    M     ?WWWW
+WWWWMMMMMMWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWW
+
+; Final line: encounter table file
+none

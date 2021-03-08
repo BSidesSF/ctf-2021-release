@@ -1,0 +1,5 @@
+The flag is computed and printed to logs when the battery percentage is *49*. There are multiple ways to solve this level, you can reverse the APK and find the 3 parts of the flag in strings.xml, variable in MainActivity.java and inline in MainActivity.java.
+
+You could update the battery percentage using adb and view the flag on Logcat 
+```adb shell dumpsys battery set level 49
+2021-02-06 12:41:44.904 7286-7286/com.bsdiessf.chargetracker D/Flag:: CTF{R3charg31tN0w} ```

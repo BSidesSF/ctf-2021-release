@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  bind:
+    build: .
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    volumes:
+      - ./bindconfig:/etc/bind
+      - /var/log/named:/var/log/named

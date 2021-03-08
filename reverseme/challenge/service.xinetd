@@ -1,0 +1,12 @@
+service service
+{
+    protocol       = tcp
+    disable        = no
+    port           = 1339
+    flags          = REUSE
+    socket_type    = stream
+    wait           = no
+    user           = ctf
+    server         = /home/ctf/reverseme
+    type           = UNLISTED
+}

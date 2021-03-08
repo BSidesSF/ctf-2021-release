@@ -1,0 +1,26 @@
+; Line 1: default map name
+Route 4
+
+; Line 2: one-line description
+You hear Asciimon
+
+; Line 3-6: up / left / down / right map names
+none
+earth.map
+none
+deepblue.map
+
+; Next 20 lines: map data
+MMMMMMMMtttttttttttt
+MMMMMMMttttttttttttt
+MMMMM              t
+^^^^               t
+                    
+^^^^                
+MMM^               t
+MMMtt              t
+MMMttttttttttttttttt
+MMMttttttttttttttttt
+
+; Final line: encounter table file
+route4.enc

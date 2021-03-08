@@ -1,0 +1,20 @@
+# This is the standard metadata for a challenge with a web component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: whole-new-me
+scoreboard_name: Whole New Me
+author: itsC0rg1
+flag: 'CTF{App3ng1n3_V3rs10n1ng}'
+description: The new me is better than the me from the past. No more flaws and no more issues - [https://bustling-bay-304920.wl.r.appspot.com/](https://bustling-bay-304920.wl.r.appspot.com/)
+value: 1000
+tags:
+  - Cloud
+flag_path:  # Optional; but helpful for players
+notes: Appengine versioning, navigate to older version and view comment to see the flag

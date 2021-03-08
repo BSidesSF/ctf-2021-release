@@ -1,0 +1,26 @@
+; Line 1: default map name
+Orange City
+
+; Line 2: one-line description
+You see constructions barriers on the east and south, but no fresh water! You see a large skyscraper in the middle of the city.
+
+; Line 3-6: up / left / down / right map names
+route5.map
+jade.map
+orange.map
+orange.map
+
+; Next 20 lines: map data
+tttttttt    tttttttt
+tt                 t
+   ####DDD#####    t
+   #          #    B
+   #  -----   #    B
+   #  - s - E #    B
+t  ############    B
+t                  t
+ttttt           tttt
+tttttttBBBBBtttttttt
+
+; Final line: encounter table file
+none

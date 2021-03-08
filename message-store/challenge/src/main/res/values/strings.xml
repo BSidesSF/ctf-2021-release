@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Message store</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password2">Confirm Password</string>
+    <string name="prompt_msg">Enter message</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_submit">Submit message</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="label_msg">Current message:</string>
+    <string name="title_activity_login">Login</string>
+</resources>

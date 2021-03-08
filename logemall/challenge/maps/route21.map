@@ -1,0 +1,26 @@
+; Line 1: default map name
+Route 21
+
+; Line 2: one-line description
+You hear Asciimon
+
+; Line 3-6: up / left / down / right map names
+colour.map
+none
+scarlet.map
+none
+
+; Next 20 lines: map data
+ttttttt    ttttttttt
+tttttt#    #tttttttt
+ttttWW#    #WWWWWttt
+ttttWW#    #WWWWWWWW
+WWWWWW#    #WWWWWWWW
+WWWWWW#    #WWWWWWWW
+WWWWWW#    #WWWWWWWW
+WWWWWW#    #tWWWWWWW
+WWWWWW#    #ttWWWWWW
+WWWWWW#    #tttttttt
+
+; Final line: encounter table file
+route19-21.enc

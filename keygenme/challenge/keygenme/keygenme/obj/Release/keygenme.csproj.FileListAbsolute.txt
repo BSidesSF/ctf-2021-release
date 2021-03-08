@@ -1,0 +1,9 @@
+C:\ctf\keygenme\keygenme\bin\Release\keygenme.exe
+C:\ctf\keygenme\keygenme\bin\Release\keygenme.pdb
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.csprojAssemblyReference.cache
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.KeygenForm.resources
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.keywords.resources
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.Properties.Resources.resources
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.csproj.GenerateResource.cache
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.exe
+C:\ctf\keygenme\keygenme\obj\Release\keygenme.pdb

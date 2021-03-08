@@ -1,0 +1,26 @@
+; Line 1: default map name
+Route 16
+
+; Line 2: one-line description
+You hear Asciimon
+
+; Line 3-6: up / left / down / right map names
+none
+none
+route17.map
+jade.map
+
+; Next 20 lines: map data
+tttttttttttttttMMMMM
+tttttMMMMMMMMMMMMMMM
+ttttMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMM         
+MMMMMMM             
+MMMMMM       MMMMMMM
+MMMMMM      MMMMMMMM
+MMMMMM     MMMMMMMMM
+MMMMMM     MMMMMMMMM
+
+; Final line: encounter table file
+route16.enc

@@ -1,0 +1,4 @@
+cron:
+- description: "periodically post url to logs"
+  url: /send?message=https%3A%2F%2Fstorage.googleapis.com%2Fshout-into-void%2F1574AB2CB00533975094D87814BCF8FA707FD608-flag.txt
+  schedule: every 5 mins

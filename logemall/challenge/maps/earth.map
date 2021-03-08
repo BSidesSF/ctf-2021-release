@@ -1,0 +1,26 @@
+; Line 1: default map name
+Mount Earth
+
+; Line 2: one-line description
+You hear bats
+
+; Line 3-6: up / left / down / right map names
+none
+route3.map
+none
+route4.map
+
+; Next 20 lines: map data
+^^^^^^^^^^^^^^^^^^^^
+^          ^       ^
+^  ^^^^^^ ^^ ^     ^
+^ ^^       ^^^  ^^^^
+^ ^  ^^^^^^         
+^ ^  ^^^^   ^^^^ ^^^
+^ ^  ^^^   ^^^^^   ^
+^ ^  ^^^^^^^^^^^   ^
+  ^               T^
+^^^^^^^^^^^^^^^^^^^^
+
+; Final line: encounter table file
+earth.enc

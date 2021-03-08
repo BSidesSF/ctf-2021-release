@@ -1,0 +1,4 @@
+core.bin
+*.o
+test
+core.elf

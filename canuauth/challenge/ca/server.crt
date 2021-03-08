@@ -1,0 +1,89 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4099 (0x1003)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=California, L=San Francisco, O=BSidesSF CTF, OU=Auth CA
+        Validity
+            Not Before: Mar  3 01:34:50 2021 GMT
+            Not After : Mar 13 01:34:50 2022 GMT
+        Subject: O=BSidesSF CTF, OU=Auth Service, CN=canuauth-4161b8b9.challenges.bsidessf.net
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:ba:65:dd:34:fd:ba:ef:f0:9b:e1:bf:29:e7:e0:
+                    40:d4:32:63:a7:29:dd:a9:06:b1:e8:49:62:71:b6:
+                    36:16:36:78:8d:ac:f2:60:77:60:05:1e:4d:25:5f:
+                    d5:17:75:de:5f:8c:26:d8:b0:ad:22:81:4f:e8:13:
+                    eb:71:11:a3:38:a1:52:45:6c:57:17:d2:4a:7a:fe:
+                    bc:13:0c:c1:07:9c:6d:5f:3b:28:67:84:13:83:3d:
+                    40:4d:27:1f:ec:20:8c:7b:11:53:59:d9:78:a6:a2:
+                    44:b3:6a:55:a1:bf:f8:d4:58:3f:d9:3b:fa:a2:24:
+                    8c:61:33:2d:73:3d:46:48:c0:c8:57:d4:73:ad:68:
+                    bc:a2:e5:69:cb:2a:39:62:c6:31:18:70:9c:b3:0a:
+                    27:c7:cd:9f:94:a8:79:f4:96:88:06:c8:57:83:e8:
+                    d5:b8:13:7c:3f:e1:ca:b1:4f:94:a4:9e:c5:27:09:
+                    e6:99:21:90:1c:bb:ce:53:e6:a8:85:fd:c4:fc:54:
+                    b6:e7:ac:02:b9:c3:17:bc:1c:35:0b:c5:c5:a3:2c:
+                    2e:20:28:a4:8a:47:c5:b6:d5:6a:63:0d:eb:6f:a0:
+                    e9:12:7c:90:af:1d:d6:da:38:87:7c:81:c9:61:6a:
+                    f1:f4:94:ae:0d:2a:56:7e:ff:da:59:14:64:91:88:
+                    61:5d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                29:26:DB:0F:F3:E5:F9:9D:8C:7D:CD:04:37:30:B7:C2:8B:4B:5B:FC
+            X509v3 Authority Key Identifier: 
+                keyid:AD:3E:C6:FE:3A:2B:AB:23:D6:CD:51:1B:58:66:0B:FD:05:1B:07:FF
+                DirName:/C=US/ST=California/L=San Francisco/O=BSidesSF CTF/OU=Auth CA
+                serial:6A:82:13:58:A7:0B:EB:FD:D5:FF:15:18:74:DE:D3:1C:50:0B:3F:0A
+
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:canuauth-4161b8b9.challenges.bsidessf.net
+    Signature Algorithm: sha256WithRSAEncryption
+         1d:33:a2:7a:1a:c4:3f:d5:cc:9e:7d:94:6c:63:6c:38:6b:41:
+         66:27:ba:d1:95:95:7d:2e:01:40:59:97:89:50:52:57:33:c9:
+         6c:ac:18:9c:27:53:d4:ac:fe:a4:76:c1:f6:57:c2:1b:8d:00:
+         9b:0d:90:6e:b5:dd:a6:82:a0:6c:f7:4c:70:c4:81:75:94:2f:
+         3f:44:44:83:8e:79:8e:16:47:93:9b:83:f2:e8:19:cc:1b:39:
+         cf:f7:2b:ff:f8:d5:f8:c8:eb:7b:3d:7d:cc:7b:84:64:8d:1c:
+         12:7c:9c:86:8c:9d:7d:6f:cd:61:2e:78:96:e9:49:50:25:8e:
+         34:33:1f:f6:bf:c6:7b:03:ed:e0:f7:b0:43:b1:1c:59:6d:4d:
+         3f:a5:2a:5d:b8:4e:9e:0e:2c:d9:df:76:48:35:34:3a:ea:18:
+         ae:30:ba:7d:29:64:8c:e7:11:b0:9d:15:da:70:ec:3d:89:5a:
+         4d:54:3f:8b:6b:c1:f6:ff:6a:b7:69:d8:43:a3:c1:7b:8a:8e:
+         d8:ac:23:11:de:03:b1:3e:94:bc:99:de:e9:65:3f:e4:b0:ad:
+         aa:44:88:5b:8f:9b:16:93:23:51:e9:eb:1f:b8:83:18:8e:00:
+         e4:34:59:f3:00:bd:cc:02:dd:63:d2:df:e7:48:c0:9c:d5:5c:
+         aa:24:99:03
+-----BEGIN CERTIFICATE-----
+MIIEXTCCA0WgAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwYzELMAkGA1UEBhMCVVMx
+EzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xFTAT
+BgNVBAoMDEJTaWRlc1NGIENURjEQMA4GA1UECwwHQXV0aCBDQTAeFw0yMTAzMDMw
+MTM0NTBaFw0yMjAzMTMwMTM0NTBaMGIxFTATBgNVBAoMDEJTaWRlc1NGIENURjEV
+MBMGA1UECwwMQXV0aCBTZXJ2aWNlMTIwMAYDVQQDDCljYW51YXV0aC00MTYxYjhi
+OS5jaGFsbGVuZ2VzLmJzaWRlc3NmLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBALpl3TT9uu/wm+G/KefgQNQyY6cp3akGsehJYnG2NhY2eI2s8mB3
+YAUeTSVf1Rd13l+MJtiwrSKBT+gT63ERozihUkVsVxfSSnr+vBMMwQecbV87KGeE
+E4M9QE0nH+wgjHsRU1nZeKaiRLNqVaG/+NRYP9k7+qIkjGEzLXM9RkjAyFfUc61o
+vKLlacsqOWLGMRhwnLMKJ8fNn5SoefSWiAbIV4Po1bgTfD/hyrFPlKSexScJ5pkh
+kBy7zlPmqIX9xPxUtuesArnDF7wcNQvFxaMsLiAopIpHxbbVamMN62+g6RJ8kK8d
+1to4h3yByWFq8fSUrg0qVn7/2lkUZJGIYV0CAwEAAaOCARowggEWMAwGA1UdEwEB
+/wQCMAAwHQYDVR0OBBYEFCkm2w/z5fmdjH3NBDcwt8KLS1v8MIGgBgNVHSMEgZgw
+gZWAFK0+xv46K6sj1s1RG1hmC/0FGwf/oWekZTBjMQswCQYDVQQGEwJVUzETMBEG
+A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzEVMBMGA1UE
+CgwMQlNpZGVzU0YgQ1RGMRAwDgYDVQQLDAdBdXRoIENBghRqghNYpwvr/dX/FRh0
+3tMcUAs/CjAOBgNVHQ8BAf8EBAMCBaAwNAYDVR0RBC0wK4IpY2FudWF1dGgtNDE2
+MWI4YjkuY2hhbGxlbmdlcy5ic2lkZXNzZi5uZXQwDQYJKoZIhvcNAQELBQADggEB
+AB0zonoaxD/VzJ59lGxjbDhrQWYnutGVlX0uAUBZl4lQUlczyWysGJwnU9Ss/qR2
+wfZXwhuNAJsNkG613aaCoGz3THDEgXWULz9ERIOOeY4WR5Obg/LoGcwbOc/3K//4
+1fjI63s9fcx7hGSNHBJ8nIaMnX1vzWEueJbpSVAljjQzH/a/xnsD7eD3sEOxHFlt
+TT+lKl24Tp4OLNnfdkg1NDrqGK4wun0pZIznEbCdFdpw7D2JWk1UP4trwfb/ardp
+2EOjwXuKjtisIxHeA7E+lLyZ3ullP+SwrapEiFuPmxaTI1Hp6x+4gxiOAOQ0WfMA
+vcwC3WPS3+dIwJzVXKokmQM=
+-----END CERTIFICATE-----

@@ -1,0 +1,22 @@
+# This is the standard metadata for a challenge with a server-side component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: reverseme2
+scoreboard_name: Reverse Me 2
+author: iagox86
+flag: 'CTF{again_me_reverse}'
+description: This is like `runme`, but with a twist! Can you figure out what it is?
+tags:
+  - Pwn
+  - "101"
+port: 1339
+protocol: tcp # accepted: http, https, tcp, udp
+flag_path: /home/ctf/flag.txt # Optional; but helpful for players
+value: 1000

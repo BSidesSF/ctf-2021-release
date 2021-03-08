@@ -1,0 +1,1 @@
+CTF{core_secrets_are_still_secrets}

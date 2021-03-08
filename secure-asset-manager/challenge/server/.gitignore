@@ -1,0 +1,4 @@
+*.o
+main
+checksum_file
+secure-asset-manager

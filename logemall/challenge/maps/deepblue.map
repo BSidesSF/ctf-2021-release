@@ -1,0 +1,26 @@
+; Line 1: default map name
+DeepBlue City
+
+; Line 2: one-line description
+There's a huge pool here! You also see a (b)ike shop, and a large house to the east.
+
+; Line 3-6: up / left / down / right map names
+none
+route4.map
+route5.map
+ron.map
+
+; Next 20 lines: map data
+tttttttttttttttttttt
+t         ######## t
+t +++++   #b     # t
+t +WWW+   #      # #
+  +WWW+   ####D###  
+  +WWW+             
+t +WWW+            #
+t +++++           tt
+t          tttt    t
+ttttt      tttttt  t
+
+; Final line: encounter table file
+none

@@ -1,0 +1,9 @@
+openssl genrsa -out ca.key 2048
+openssl req -new -nodes -key ca.key -sha256 -days 30 -x509 -out ca.crt
+openssl genrsa -out server.key 2048
+openssl genrsa -out client.key 2048
+openssl req -new -key server.key -out server.crt
+openssl req -new -key server.key -out server.csr -addext "subjectAltName = DNS:canuauth-4161b8b9.challenges.bsidessf.net"
+CERT_SAN=DNS:canuauth-4161b8b9.challenges.bsidessf.net openssl ca -config ca.ini -in server.csr -out server.crt
+openssl req -new -key client.key -out client.csr
+CERT_SAN=DNS:client.canuauth-4161b8b9.challenges.bsidessf.net openssl ca -config ca.ini -in client.csr -out client.crt

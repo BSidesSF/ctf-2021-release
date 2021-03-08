@@ -1,0 +1,17 @@
+The app stores the messages in a Firebase database, due to a misconfiguration anyone can read from the database. 
+```
+	{
+  		"rules": {
+    				".read": true,
+    				"users": {
+      							"$uid": {
+        									".write": "$uid === auth.uid",
+          									"msg" : {
+        												".validate": "newData.val().length <= 25"
+          									}
+      									}
+    						}
+  				}
+	}
+```
+By reversing the application or by observing the requests made by the application, you can find the URL for the database and navigate to it. In this case, it is [https://bsides-sf-ctf-2021-default-rtdb.firebaseio.com/users.json](https://bsides-sf-ctf-2021-default-rtdb.firebaseio.com/users.json).

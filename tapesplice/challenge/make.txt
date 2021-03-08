@@ -1,0 +1,6 @@
+tar -cvf tapesplice.tar thankyou_noflag.png
+
+echo -n 'CTF{everything_has_space_for_hidden_data}' | bzip2 -9 > flag.bz2
+
+dd if=flag.bz2 conv=notrunc bs=1 seek=129135 of=tapesplice.tar
+

@@ -1,0 +1,22 @@
+# This is the standard metadata for a challenge with a server-side component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: hashcrack101
+scoreboard_name: "Hashcrack 101"
+author: matir
+flag: 'CTF{drink_all_the_booze_hack_all_the_things_dedicated_to_all_the_hackers}'
+description: I've got some simple hashes for you to crack.  To get your flag,
+  concatenate the plaintext of each hash with underscores and surround in
+  `CTF{}`.  For example, `CTF{plaintext01_plaintext02}`.
+value: 1000
+tags:
+  - Crypto
+  - "101"
+notes: Private notes on deployment, setup, etc.

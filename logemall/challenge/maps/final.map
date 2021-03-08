@@ -1,0 +1,27 @@
+; Line 1: default map name
+Final Fight
+
+; Line 2: one-line description
+You see Red and his rival Blue fighting!
+
+; Line 3-6: up / left / down / right map names
+none
+none
+colour.map
+none
+
+; Next 20 lines: map data
+####################
+#                  #
+#     RED          #
+#                  #
+#      -vs-        #
+#                  #
+#        BLUE      #
+#                  #
+#                  #
+########DD##########
+
+; Final line: encounter table file
+none
+

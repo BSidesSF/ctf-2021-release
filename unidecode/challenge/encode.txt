@@ -1,0 +1,1 @@
+$ iconv -f iso-8859-1 -t utf8 utf8_flag.jpg > utf8_flag.jpg.utf8

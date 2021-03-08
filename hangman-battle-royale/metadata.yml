@@ -1,0 +1,11 @@
+version: beta1
+name: hangman-battle-royale
+scoreboard_name: Hangman Battle Royale
+author: iagox86
+flag: 'CTF{hooray_mt19937}'
+description: "Can you win at least 8 rounds of Hangman?"
+value: 1000
+tags:
+  - RE
+port: 2121
+protocol: tcp

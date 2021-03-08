@@ -1,0 +1,26 @@
+; Line 1: default map name
+Route 5
+
+; Line 2: one-line description
+You hear Asciimon. You think you see somebody hiding in the bushes in the east?
+
+; Line 3-6: up / left / down / right map names
+deepblue.map
+none
+orange.map
+none
+
+; Next 20 lines: map data
+ttttt      tttttt  t
+ttttt         tr   t
+ttt           tttttt
+tt       ttt   ttttt
+tt         tt  ttttt
+ttttttt    tt     tt
+tt      ttttt     tt
+tt      tttt      tt
+tt                tt
+tttttttt    tttttttt
+
+; Final line: encounter table file
+route5.enc

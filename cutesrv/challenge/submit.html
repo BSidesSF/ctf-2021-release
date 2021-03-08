@@ -1,0 +1,17 @@
+{{template "base" .}}
+
+{{define "main"}}
+<h1>Submit Cute Stuff</h1>
+<p>Got something cute?  Submit it here.  Please note that <i>all</i> submissions
+must be reviewed by our admin for optimal cuteness.</p>
+{{if .Error}}
+  <div class="alert alert-danger">{{.Error}}</div>
+{{end}}
+{{if .Info}}
+  <div class="alert alert-info">{{.Info}}</div>
+{{end}}
+<form method="POST" action="/submit">
+  <input type="text" name="url" placeholder="Image URL">
+  <input type="submit" value="Submit">
+</form>
+{{end}}

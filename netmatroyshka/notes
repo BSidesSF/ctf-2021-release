@@ -1,0 +1,11 @@
+Layer 1: telnet (echo encoded flag to flag.txt)
+  zipped into 1.zip
+Layer 2: dnscat2 (upload 1.zip)
+  zipped into 2.zip
+Layer 3: git (committed/cloned 2.zip)
+Layer 4: SMB (transferred 3.zip)
+Layer 5: tftp (transferred 4.zip)
+Layer 6: rsync (transferred 5.zip)
+Layer 7: ftp (transferred 6.zip)
+  zip -P "goodluck,havefun" 7.zip 7.pcap
+Layer 8: http

@@ -1,0 +1,13 @@
+version: beta1
+name: glitter-printer
+scoreboard_name: Glitter Printer
+author: iagox86
+flag: 'CTF{hackin_it_oldschool}'
+description: "We dumped the attached blob from a 'printer'. Can you figure out how to get the flag? We're pretty sure it's x86, and it looks like the code might be loaded into RWX memory?"
+tags:
+  - RE
+  - Pwn
+port: 515
+protocol: tcp
+flag_path: /flag.txt
+value: 1000

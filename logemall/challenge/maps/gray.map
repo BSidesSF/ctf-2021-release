@@ -1,0 +1,26 @@
+; Line 1: default map name
+Gray City
+
+; Line 2: one-line description
+There's an Ascii M(u)seum here and a Rock (g)ym here!
+
+; Line 3-6: up / left / down / right map names
+none
+none
+chartreuse.map
+route3.map
+
+; Next 20 lines: map data
+tttttttttttttttttttt
+tttttttttttttttttttt
+t######             
+t#  g #            t
+t#    #            t
+t#D####    #D###    
+t          #   #    
+t          # u #   t
+t          #####   t
+tttttttt   ttttttttt
+
+; Final line: encounter table file
+none

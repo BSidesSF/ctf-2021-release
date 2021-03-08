@@ -1,0 +1,1 @@
+CTF{morse_was_the_original_binary}

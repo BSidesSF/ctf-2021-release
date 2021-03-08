@@ -1,0 +1,26 @@
+; Line 1: default map name
+Route 3
+
+; Line 2: one-line description
+You hear Asciimon
+
+; Line 3-6: up / left / down / right map names
+none
+gray.map
+none
+earth.map
+
+; Next 20 lines: map data
+ttttttttttttttttMMMM
+tttttt  ttttttttMMMM
+        ttttttttMMMM
+tttt         tttMMMM
+tttt         tttMMMM
+                 MMM
+                 MMM
+ttttttttttt       ^^
+ttttttttttt         
+ttttttttttttttMMMMM^
+
+; Final line: encounter table file
+route3.enc

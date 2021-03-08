@@ -1,0 +1,21 @@
+# This is the standard metadata for a challenge with a web component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: permhash296
+scoreboard_name: "PermCoin - Starter Attack"
+author: symmetric
+flag: "CTF{permutation_attacks_no_joke_one_more_collision_ill_go_broke}"
+description: Look a new coin! I hear it uses crypto you can take to the bank.
+tags:
+  - Crypto
+port: 4560
+protocol: tcp # accepted: http, https, tcp, udp
+notes: Private notes on deployment, setup, etc.
+value: 1000

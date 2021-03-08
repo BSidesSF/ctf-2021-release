@@ -1,0 +1,26 @@
+; Line 1: default map name
+Jade City
+
+; Line 2: one-line description
+There's a big mall here!
+
+; Line 3-6: up / left / down / right map names
+none
+route16.map
+none
+orange.map
+
+; Next 20 lines: map data
+tttttttttttttttttttt
+tttttttttttttttttttt
+ttt###########ttt   
+ttt#  - w w- #tt    
+   #  -    - #t     
+   #  -    - #t     
+t  #w      w #     t
+t  ####DD#####     t
+tt                tt
+tttttttttttttttttttt
+
+; Final line: encounter table file
+none

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "933132803254",
+    "firebase_url": "https://bsides-sf-ctf-2021-default-rtdb.firebaseio.com",
+    "project_id": "bsides-sf-ctf-2021",
+    "storage_bucket": "bsides-sf-ctf-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933132803254:android:c5e5977011cc19469a9a17",
+        "android_client_info": {
+          "package_name": "com.bsidessf.msgstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933132803254-m3s2t3jgnv2gbo3m6v73cp2jqac6l2ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBogOzGapc_uhJPPl5ttEmZC9AUWFUlF4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933132803254-m3s2t3jgnv2gbo3m6v73cp2jqac6l2ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

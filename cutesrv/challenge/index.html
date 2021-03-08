@@ -1,0 +1,17 @@
+{{template "base" .}}
+
+{{define "main"}}
+<h1>Cute Stuff</h1>
+<div id="desc"><p>
+  It's been a tough year.  Please enjoy these pictures (graciously stolen from
+  the internet) to help you recharge.  Please consider submitting your own
+  contribution.
+</p></div>
+<div class="im-container">
+{{range .Images}}
+<div class="im-box">
+  <img src="{{.}}">
+</div>
+{{end}}
+</div>
+{{end}}

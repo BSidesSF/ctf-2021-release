@@ -1,0 +1,12 @@
+service service
+{
+    protocol       = tcp
+    disable        = no
+    port           = 2121
+    flags          = REUSE
+    socket_type    = stream
+    wait           = no
+    user           = root
+    server         = /src/hangman.rb
+    type           = UNLISTED
+}

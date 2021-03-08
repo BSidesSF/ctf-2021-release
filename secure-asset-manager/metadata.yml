@@ -1,0 +1,12 @@
+version: beta1
+name: secure-asset-manager
+scoreboard_name: Secure Asset Manager
+author: iagox86
+flag: 'CTF{this_is_kinda_like_the_starcraft_login}'
+description: "This tool logs into a server. We think there's a flag hiding there. Can you figure out how the tool works and get the flag?"
+value: 1000
+tags:
+  - RE
+  - Pwn
+port: 6112
+protocol: tcp

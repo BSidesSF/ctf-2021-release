@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/percentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/percentage_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/verguideline1"
+        app:layout_constraintTop_toBottomOf="@id/horguideline1" />
+
+    <TextView
+        android:id="@+id/percentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/verguideline2"
+        app:layout_constraintTop_toBottomOf="@id/percentLabel" />
+
+    <ImageView
+        android:id="@+id/batteryImageView"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/low"
+        app:layout_constraintTop_toBottomOf="@id/horguideline2"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="73dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="215dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="155dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

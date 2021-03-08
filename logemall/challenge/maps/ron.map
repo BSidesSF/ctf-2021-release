@@ -1,0 +1,26 @@
+; Line 1: default map name
+Ron's House
+
+; Line 2: one-line description
+R(o)n lives here. He likes PCs! He has one in the corner
+
+; Line 3-6: up / left / down / right map names
+none
+deepblue.map
+none
+none
+
+; Next 20 lines: map data
+####################
+####################
+##    o o   - P - ##
+##     o     ---  ##
+D   o     o       ##
+D    ooooo        ##
+##                ##
+##                ##
+####################
+####################
+
+; Final line: encounter table file
+none

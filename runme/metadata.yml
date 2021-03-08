@@ -1,0 +1,22 @@
+# This is the standard metadata for a challenge with a server-side component.
+# In terms of file structure, please also have the following:
+#
+# - A challenge/ folder with everything needed to create the challenge assets
+# - A distfiles/ folder which contains all files (or symlinks to files) that
+#   will be attached to the challenge
+# - A solution/ folder with a working solution to the challenge (or a README.md
+#   file documenting the solution)
+
+version: beta1
+name: runme
+scoreboard_name: Runme
+author: iagox86
+flag: 'CTF{welcome_to_shellcode}'
+description: You send x64 code, we run it! Try `echo -ne '\xe8\x0d\x00\x00\x00\x48\x65\x6c\x6c\x6f\x20\x77\x6f\x72\x6c\x64\x0a\x00\x5e\x48\x31\xc0\x48\xff\xc0\x48\x31\xff\x48\xff\xc6\x48\x31\xd2\xb2\x0c\x0f\x05\x48\x31\xc0\xb0\x3c\x48\x31\xff\x0f\x05' | nc -v runme-bc63cb99.challenges.bsidessf.net 1337`
+value: 1000
+tags:
+  - Pwn
+  - "101"
+port: 1337
+protocol: tcp # accepted: http, https, tcp, udp
+flag_path: /home/ctf/flag.txt # Optional; but helpful for players
